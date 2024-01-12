@@ -1,5 +1,10 @@
-<!--- Copyright (C) 2023, Advanced Micro Devices, Inc. All rights reserved.
-SPDX-License-Identifier: MIT --->
+<table class="sphinxhide">
+ <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/Xilinx/Image-Collateral/main/xilinx-logo.png" width="30%"/>
+    </td>
+ </tr>
+</table>
+
 <h1 align="center">AMD AXI_1WIRE_HOST IP</h1>
 
 ## :warning: Disclaimer
@@ -329,3 +334,7 @@ This section includes information about using the Vitis Unified Software Platfor
    - AXI_1WIRE_HOST_SelfTest
    - AXI_1WIRE_HOST_GPIO_Read
    - AXI_1WIRE_HOST_GPIO_Write
+
+<p class="sphinxhide" align="center"><sub>Copyright © 2024 Advanced Micro Devices, Inc</sub></p>
+
+<p class="sphinxhide" align="center"><sup><a href="https://www.amd.com/en/corporate/copyright">Terms and Conditions</a></sup></p>
