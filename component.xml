@@ -7,7 +7,7 @@
   <spirit:vendor>AMD</spirit:vendor>
   <spirit:library>AMD</spirit:library>
   <spirit:name>axi_1wire_host</spirit:name>
-  <spirit:version>1.0</spirit:version>
+  <spirit:version>1.1</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
       <spirit:name>S00_AXI</spirit:name>
@@ -300,7 +300,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>1ec3e3fd</spirit:value>
+            <spirit:value>6df03f57</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -316,7 +316,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>1ec3e3fd</spirit:value>
+            <spirit:value>bef37ef8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -330,7 +330,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>633dd421</spirit:value>
+            <spirit:value>5b4f3ffe</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -344,7 +344,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>b77f61a8</spirit:value>
+            <spirit:value>faf23372</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -358,7 +358,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>45a2f450</spirit:value>
+            <spirit:value>6693f62c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -366,6 +366,23 @@
         <spirit:name>xilinx_productguide</spirit:name>
         <spirit:displayName>Product Guide</spirit:displayName>
         <spirit:envIdentifier>:vivado.xilinx.com:docs.productguide</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_productguide_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_implementation</spirit:name>
+        <spirit:displayName>Implementation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:implementation</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_implementation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>2a16ebef</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
       </spirit:view>
     </spirit:views>
     <spirit:ports>
@@ -770,19 +787,16 @@
       <spirit:file>
         <spirit:name>src/w1_master.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_c2310a43</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/axi_1wire_host_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_e90fad0a</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_6dbf7599</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>hdl/axi_1wire_host_v1_0_S00_AXI.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
       <spirit:file>
         <spirit:name>src/clk_div.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
@@ -797,6 +811,10 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>src/w1_master.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/axi_1wire_host_v1_0_S00_AXI.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -839,9 +857,9 @@
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/axi_1wire_host_v1_0.tcl</spirit:name>
+        <spirit:name>xgui/axi_1wire_host_v1_1.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_b77f61a8</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_84e86178</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -850,6 +868,24 @@
       <spirit:file>
         <spirit:name>bd/bd.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_productguide_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>https://github.com/Xilinx/axi_1wire_host-IP</spirit:name>
+        <spirit:fileType>unknown</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_implementation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>constr/axi_1wire_host.xdc</spirit:name>
+        <spirit:userFileType>xdc</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>late</spirit:value>
+        </spirit:define>
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
@@ -907,7 +943,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">axi_1wire_host_v1_0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">axi_1wire_host_v1_1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>CLK_DIV_VAL_TO_1MHz</spirit:name>
@@ -925,20 +961,20 @@
       <xilinx:autoFamilySupportLevel>level_beta</xilinx:autoFamilySupportLevel>
       <xilinx:vendorDisplayName>AMD</xilinx:vendorDisplayName>
       <xilinx:vendorURL>https://www.amd.com/en.html</xilinx:vendorURL>
-      <xilinx:coreRevision>16</xilinx:coreRevision>
+      <xilinx:coreRevision>41</xilinx:coreRevision>
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>user.org:user:axi_1wire_host:1.0</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2023-11-14T15:21:52Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2024-02-26T18:20:39Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2023.1</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2023.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="8811e119"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="497b0fc4"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="52473a7e"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="6b026210"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="02035b5b"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="de50fe80"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="0e0b8087"/>
       <xilinx:targetDRCs>
         <xilinx:targetDRC xilinx:tool="ipi">
           <xilinx:targetDRCOption xilinx:name="ignore_freq_hz" xilinx:value="false"/>
