@@ -1,5 +1,3 @@
-<h1 align="center">AMD AXI_1WIRE_HOST</h1>
-
 <table class="sphinxhide">
  <tr>
     <td align="center"><img src="https://raw.githubusercontent.com/Xilinx/Image-Collateral/main/xilinx-logo.png" width="30%"/><h1>AXI_1WIRE_HOST</h1>
