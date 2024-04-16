@@ -6,13 +6,13 @@ proc init_gui { IPINST } {
   ipgui::add_param $IPINST -name "Component_Name"
   #Adding Page
   set Page_0 [ipgui::add_page $IPINST -name "Page 0"]
-  set CLK_DIV_VAL_TO_1MHz [ipgui::add_param $IPINST -name "CLK_DIV_VAL_TO_1MHz" -parent ${Page_0}]
-  set_property tooltip {S00_AXI_CLK divider value to produce a 1MHz clock (e.g. for a 100MHz S00_AXI_CLK, the divider would be 100)} ${CLK_DIV_VAL_TO_1MHz}
   ipgui::add_param $IPINST -name "C_S00_AXI_DATA_WIDTH" -parent ${Page_0} -widget comboBox
   ipgui::add_param $IPINST -name "C_S00_AXI_ADDR_WIDTH" -parent ${Page_0}
   ipgui::add_param $IPINST -name "C_S00_AXI_BASEADDR" -parent ${Page_0}
   ipgui::add_param $IPINST -name "C_S00_AXI_HIGHADDR" -parent ${Page_0}
 
+  set CLK_DIV_VAL_TO_1MHz [ipgui::add_param $IPINST -name "CLK_DIV_VAL_TO_1MHz"]
+  set_property tooltip {S00_AXI_CLK divider value to produce a 1MHz clock (e.g. for a 100MHz S00_AXI_CLK, the divider would be 100)} ${CLK_DIV_VAL_TO_1MHz}
 
 }
 
